@@ -139,7 +139,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const About = () => {
   const sliderData = [
-    { src: "/images/kohinoor.jpg", heading: "Empowering Farmers", subtitle: "Sustainable solutions for healthier crops." },
+    { src: "/images/agrozyme.png", heading: "Empowering Farmers", subtitle: "Sustainable solutions for healthier crops." },
     { src: "/images/kohinoor.jpg", heading: "Boosting Productivity", subtitle: "Innovative bio-products for maximum yield." },
     { src: "/images/kohinoor.jpg", heading: "Eco-Friendly Agriculture", subtitle: "Protecting soil and environment together." },
     { src: "/images/kohinoor.jpg", heading: "Trusted by Farmers", subtitle: "Delivering quality products for every farm." },

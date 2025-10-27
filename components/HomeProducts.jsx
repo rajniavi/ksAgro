@@ -36,8 +36,8 @@ const HomeProducts = () => {
     contextProducts.length > 0
       ? contextProducts
       : [
-          { _id: "p1", name: "Kohinoor 1", description: "Desc", image: [assets.kohinoor], offerPrice: 450 },
-          { _id: "p2", name: "Kohinoor 2", description: "Desc", image: [assets.kohinoor1], offerPrice: 460 },
+           { _id: "p1", name: "Kohinoor 1", description: "Desc", image: [assets.agrozyme], offerPrice: 450 },
+          { _id: "p2", name: "Kohinoor 2", description: "Desc", image: ["/images/kohinoor.png"], offerPrice: 460 },
           { _id: "p3", name: "Kohinoor 3", description: "Desc", image: [assets.kohinoor2], offerPrice: 470 },
           { _id: "p4", name: "Kohinoor 4", description: "Desc", image: [assets.kohinoor], offerPrice: 480 },
           { _id: "p5", name: "Kohinoor 5", description: "Desc", image: [assets.kohinoor1], offerPrice: 490 },
