@@ -80,13 +80,13 @@ const Banner = () => {
       description: "Kohinoor Powder delivers essential nutrients for healthier plants.",
     },
     {
-      src: assets.kohinoor1,
+      src: assets.kohinoor,
       alt: "Kohinoor Powder 2",
       title: "Kohinoor Powder 2",
       description: "Kohinoor Powder delivers essential nutrients for healthier plants.",
     },
     {
-      src: assets.kohinoor2,
+      src: assets.kohinoor,
       alt: "Kohinoor Powder 3",
       title: "Kohinoor Powder 3",
       description: "Kohinoor Powder delivers essential nutrients for healthier plants.",
