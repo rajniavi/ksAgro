@@ -411,7 +411,7 @@ const Navbar = () => {
           </div>
 
           {/* RIGHT: Admin, Search, Account */}
-          <div className="hidden sm:flex items-center gap-4 flex-shrink-0">
+          <div className="hidden md:flex items-center gap-4 flex-shrink-0">
             {isSeller && (
               <motion.button
                 onClick={() => router.push("/admindashboard")}
