@@ -7,12 +7,42 @@ import Chatbot from "@/components/Chatbot";
 import { motion } from "framer-motion";
 
 const shopProducts = [
-  { src: assets.kohinoor, title: "Kohinoor Powder 1", description: "Essential nutrients for healthier plants." },
-  { src: assets.agrozyme, title: "Kohinoor Powder 2", description: "Enhances growth and productivity." },
-  { src: assets.shakti, title: "Kohinoor Powder 3", description: "Perfect for all types of crops." },
-  { src: assets.starplus, title: "Kohinoor Powder 4", description: "High-quality fertilizer for your farm." },
-  { src: assets.vijay_growing, title: "Kohinoor Powder 5", description: "Boost your harvest with nutrients." },
-  { src: assets.fungi_killer, title: "Kohinoor Powder 6", description: "Sustainable farming made easy." },
+  {
+    src: assets.kohinoor,
+    title: "Kohinoor",
+    description:
+      "Kohinoor Powder delivers essential nutrients for healthier, greener, and more productive plants.",
+  },
+  {
+    src: assets.agrozyme,
+    title: "Agrozyme",
+    description:
+      "Agrozyme enhances plant growth, improves soil fertility, and boosts yield naturally.",
+  },
+  {
+    src: assets.shakti,
+    title: "Shakti",
+    description:
+      "Shakti improves soil fertility and strengthens plant growth for higher yield.",
+  },
+  {
+    src: assets.starplus,
+    title: "Starplus",
+    description:
+      "Starplus enhances crop health and boosts yield with balanced nutrients.",
+  },
+  {
+    src: assets.vijay_growing,
+    title: "Vijay Growing",
+    description:
+      "Milk Magic boosts soil fertility and promotes healthy, sustainable crop growth.",
+  },
+  {
+    src: assets.fungi_killer,
+    title: "Fungi Killer",
+    description:
+      "Fungi Killer protects crops from fungal infections, ensuring healthy plant growth.",
+  },
 ];
 
 const Shop = () => {
@@ -51,9 +81,13 @@ const Shop = () => {
                 height={300}
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-green-900/80 to-transparent p-4 text-white space-y-1">
-                <p className="font-semibold text-lg">{title}</p>
-                <p className="text-sm">{description}</p>
+              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-green-900/85 to-transparent p-4 space-y-1">
+                <p className="font-semibold text-lg text-yellow-300 drop-shadow-md">
+                  {title}
+                </p>
+                <p className="text-sm text-green-100 leading-snug drop-shadow-sm">
+                  {description}
+                </p>
               </div>
             </div>
           </motion.div>
@@ -79,19 +113,23 @@ const Shop = () => {
             />
             <button
               onClick={() => setSelectedProduct(null)}
-              className="absolute top-3 right-4 text-white text-3xl font-bold"
+              className="absolute top-3 right-4 text-white text-3xl font-bold hover:text-green-300 transition"
             >
               &times;
             </button>
-            <div className="text-white mt-4 text-center px-3">
-              <p className="font-bold text-2xl">{selectedProduct.title}</p>
-              <p className="text-sm">{selectedProduct.description}</p>
+            <div className="text-center px-3 mt-5">
+              <p className="font-bold text-2xl text-green-300 drop-shadow-lg">
+                {selectedProduct.title}
+              </p>
+              <p className="text-sm text-gray-200 mt-1 max-w-2xl mx-auto leading-relaxed">
+                {selectedProduct.description}
+              </p>
             </div>
           </div>
         </div>
       )}
 
-      {/* Chatbot (fixed & full-screen on mobile) */}
+      {/* Chatbot */}
       <Chatbot />
     </div>
   );

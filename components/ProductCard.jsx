@@ -137,12 +137,12 @@ const ProductCard = ({ product }) => {
       {/* Price + Button */}
       <div className="flex items-center justify-between w-full mt-1 sm:mt-2">
         <p className="text-sm sm:text-base font-semibold text-green-700">
-          {currency}
-          {product.offerPrice}
+          {/* {currency}
+          {product.offerPrice} */}
         </p>
-        <button className="hidden sm:block px-3 sm:px-4 py-1.5 text-white bg-green-600 border border-green-600 rounded-full text-xs sm:text-sm hover:bg-green-700 transition">
+        {/* <button className="hidden sm:block px-3 sm:px-4 py-1.5 text-white bg-green-600 border border-green-600 rounded-full text-xs sm:text-sm hover:bg-green-700 transition">
           Buy now
-        </button>
+        </button> */}
       </div>
     </div>
   );
