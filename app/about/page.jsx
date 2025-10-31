@@ -47,12 +47,12 @@ const About = () => {
       desc: "We offer eco-friendly fertilizers and bio-care solutions.",
     },
     {
-      img: "/images/kohinoor.png",
+      img: "/images/agrozyme.png",
       title: "Farmer Support",
       desc: "Helping farmers grow with knowledge and innovation.",
     },
     {
-      img: "/images/kohinoor.png",
+      img: "/images/starplus.png",
       title: "Trusted Quality",
       desc: "Delivering excellence with every product we provide.",
     },
