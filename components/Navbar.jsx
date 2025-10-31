@@ -224,6 +224,7 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
 import { assets } from "@/assets/assets";
+import useTranslation from "@/components/useTranslation";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -240,6 +241,7 @@ import { FaVolumeUp, FaVolumeMute, FaChevronDown } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAppContext } from "@/context/AppContext";
 
+
 const Navbar = () => {
   const { isSeller, router } = useAppContext();
   const audioRef = useRef(null);
@@ -251,6 +253,7 @@ const Navbar = () => {
   const [siteLangOpen, setSiteLangOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation(siteLang === "English" ? "en" : "hi");
 
   const audioFiles = {
     hi: "/farming-hindi.mp3",
@@ -385,7 +388,7 @@ const Navbar = () => {
                 after:bg-gradient-to-r after:from-pink-500 after:via-yellow-400 after:to-green-400 
                 hover:after:w-full after:transition-all after:duration-500 hover:after:animate-gradient-move"
               >
-                KashtkaarAgroBioCare
+                {/* KashtkaarAgroBioCare */}{t("brand")}
               </motion.span>
             </Link>
           </div>
@@ -403,16 +406,16 @@ const Navbar = () => {
           {/* MIDDLE: Nav Links (Desktop) */}
           <div className="hidden md:flex items-center gap-8 font-medium">
             <Link href="/" className={navLinkClass}>
-              <HomeIcon className="w-4 h-4" /> Home
+              <HomeIcon className="w-4 h-4" /> {t("home")}
             </Link>
             <Link href="/shop" className={navLinkClass}>
-              <ShoppingBag className="w-4 h-4" /> Shop
+              <ShoppingBag className="w-4 h-4" /> {t("shop")}
             </Link>
             <Link href="/about" className={navLinkClass}>
-              <Info className="w-4 h-4" /> About Us
+              <Info className="w-4 h-4" /> {t("about")}
             </Link>
             <Link href="/contact" className={navLinkClass}>
-              <Phone className="w-4 h-4" /> Contact
+              <Phone className="w-4 h-4" /> {t("contact")}
             </Link>
 
             {/* New Language Button */}
@@ -441,7 +444,7 @@ const Navbar = () => {
                       }}
                       className="px-3 py-1 hover:bg-green-200 text-green-700 text-sm"
                     >
-                      English
+                 {t("english")}
                     </button>
 
                     <button
@@ -451,7 +454,7 @@ const Navbar = () => {
                       }}
                       className="px-3 py-1 hover:bg-green-200 text-green-700 text-sm"
                     >
-                      Hindi
+                     {t("hindi")}
                     </button>
                   </motion.div>
                 )}
@@ -497,12 +500,12 @@ const Navbar = () => {
                   disabled
                   className="text-sm bg-green-600 text-white px-4 py-2 rounded-full shadow cursor-not-allowed opacity-90 relative z-[60]"
                 >
-                  Admin
+               {  t("admin")  }
                 </button>
 
                 {/* Tooltip */}
                 <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-green-700 text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap z-[9999] shadow-lg">
-                  Coming soon
+                  {t("comingSoon")  }
                 </div>
               </motion.div>
             )}
@@ -526,10 +529,10 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
             >
               <Image src={assets.user_icon} alt="user" width={24} height={24} />
-              Account
+           {t("account")  }
               {/* Tooltip */}
               <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-green-700 text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap z-[9999] shadow-lg">
-                Coming soon
+               {t ("comingSoon") } 
               </div>
             </motion.div>
           </div>
@@ -550,28 +553,28 @@ const Navbar = () => {
                 className={navLinkClass}
                 onClick={() => setMenuOpen(false)}
               >
-                <HomeIcon className="w-4 h-4" /> Home
+                <HomeIcon className="w-4 h-4" />{t("home")}
               </Link>
               <Link
                 href="/shop"
                 className={navLinkClass}
                 onClick={() => setMenuOpen(false)}
               >
-                <ShoppingBag className="w-4 h-4" /> Shop
+                <ShoppingBag className="w-4 h-4" /> {t("shop")}
               </Link>
               <Link
                 href="/about"
                 className={navLinkClass}
                 onClick={() => setMenuOpen(false)}
               >
-                <Info className="w-4 h-4" /> About Us
+                <Info className="w-4 h-4" /> {t("about")}
               </Link>
               <Link
                 href="/contact"
                 className={navLinkClass}
                 onClick={() => setMenuOpen(false)}
               >
-                <Phone className="w-4 h-4" /> Contact
+                <Phone className="w-4 h-4" /> {t("contact")}
               </Link>
 
               {/* Language Button Mobile */}
