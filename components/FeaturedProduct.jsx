@@ -8,12 +8,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const kohinoorImages = [
-  { src: assets.kohinoor || "/images/kohinoor.png", title: "Kohinoor Powder 1", description: "Essential nutrients for healthier plants." },
-  { src: assets.agrozyme || "/images/agrozyme.png", title: "Kohinoor Powder 2", description: "Boosts growth and productivity." },
-  { src: assets.shakti || "/images/shakti.png", title: "Kohinoor Powder 3", description: "Perfect for all soil types." },
-  { src: assets.starplus || "/images/starplus.png", title: "Kohinoor Powder 4", description: "Enhances plant immunity." },
-  { src: assets.fungi_killer || "/images/fungi_killer.png", title: "Kohinoor Powder 5", description: "Rich in micronutrients." },
-  { src: assets.vijay_growing || "/images/vijay_growing.png", title: "Kohinoor Powder 6", description: "Improves yield and quality." },
+  { src: assets.kohinoor || "/images/kohinoor.png", title: "Kohinoor", description: "Essential nutrients for healthier plants." },
+  { src: assets.agrozyme || "/images/agrozyme.png", title: "Agrozyme", description: "Boosts growth and productivity." },
+  { src: assets.shakti || "/images/shakti.png", title: "Shakti", description: "Perfect for all soil types." },
+  { src: assets.starplus || "/images/starplus.png", title: "Starplus", description: "Enhances plant immunity." },
+  { src: assets.fungi_killer || "/images/fungi_killer.png", title: "Fungi Killer", description: "Rich in micronutrients." },
+  { src: assets.vijay_growing || "/images/vijay_growing.png", title: "Vijay Growing", description: "Improves yield and quality." },
 ];
 
 const FeaturedProduct = () => {
