@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
       className="flex flex-col items-start gap-1 w-full sm:max-w-[240px] md:max-w-[260px] cursor-pointer transition-transform hover:scale-[1.02]"
     >
       {/* Product Image Container */}
-      <div className="relative group bg-gray-100 rounded-lg w-full h-44 sm:h-52 md:h-56 flex items-center justify-center overflow-hidden">
+      <div className="relative group bg-gradient-to-b from-[#A9EAA3] to-[#66C46A] rounded-lg w-full h-44 sm:h-52 md:h-56 flex items-center justify-center overflow-hidden">
         {/* Limited Stock Badge */}
         <span className="absolute top-2 left-2 bg-yellow-300 text-yellow-900 px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-semibold rounded shadow">
           Limited Stock

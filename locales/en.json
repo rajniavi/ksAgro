@@ -88,59 +88,25 @@
   "assistantMessage": "🙏🏻 Namaste! I am Khashtkaar Agro Bio Care Assistant. How can I help you today?",
 
   "products": {
-    "kohinoor": {
-      "name": "Kohinoor",
-      "description": "Kohinoor Powder delivers essential nutrients for healthier, greener, and more productive plants."
-    },
-    "agrozyme": {
-      "name": "Agrozyme",
-      "description": "Agrozyme enhances plant growth, improves soil fertility, and boosts yield naturally."
-    },
-    "fungiKiller": {
-      "name": "Fungi Killer",
-      "description": "Fungi Killer protects crops from fungal infections, ensuring healthy plant growth."
-    },
-    "kashtkaarSulfur": {
-      "name": "Kashtkaar Sulfur",
-      "description": "Kashtkaar Sulfur improves soil health, boosts yield, and controls fungal diseases."
-    },
-    "kingsPlus": {
-      "name": "Kings Plus",
-      "description": "Kings Plus strengthens soil health, increases productivity, and controls fungal issues effectively."
-    },
-    "krishiAmrit": {
-      "name": "Krishi Amrit",
-      "description": "Krishi Amrit provides essential nutrients for healthy, greener, and more productive crops."
-    },
-    "milkMagic40kg": {
-      "name": "Milk Magic 40kg",
-      "description": "Milk Magic 40kg enhances plant growth and increases crop productivity effectively."
-    },
-    "milkMagic": {
-      "name": "Milk Magic",
-      "description": "Milk Magic boosts soil fertility and promotes healthy, sustainable crop growth."
-    },
-    "rootPlus": {
-      "name": "Root Plus",
-      "description": "Root Plus enhances root strength and boosts overall plant growth naturally."
-    },
-    "shakti": {
-      "name": "Shakti",
-      "description": "Shakti improves soil fertility and strengthens plant growth for higher yield."
-    },
-    "starplus": {
-      "name": "Starplus",
-      "description": "Starplus enhances crop health and boosts yield with balanced nutrients."
-    },
-    "suprimoLiquid": {
-      "name": "Suprimo Liquid",
-      "description": "Suprimo Liquid promotes strong root growth and improves overall plant health."
-    },
-    "vijayGrowing": {
-      "name": "Vijay Growing",
-      "description": "Vijay Growing enriches soil fertility and promotes sustainable crop development."
-    }
-  }
+  "kohinoor_title": "Kohinoor",
+  "kohinoor_desc": "Kohinoor Powder delivers essential nutrients for healthier, greener, and more productive plants.",
+  
+  "agrozyme_title": "Agrozyme",
+  "agrozyme_desc": "Agrozyme enhances plant growth, improves soil fertility, and boosts yield naturally.",
+  
+  "shakti_title": "Shakti",
+  "shakti_desc": "Shakti improves soil fertility and strengthens plant growth for higher yield.",
+  
+  "starplus_title": "Starplus",
+  "starplus_desc": "Starplus enhances crop health and boosts yield with balanced nutrients.",
+  
+  "vijay_growing_title": "Vijay Growing",
+  "vijay_growing_desc": "Milk Magic boosts soil fertility and promotes healthy, sustainable crop growth.",
+  
+  "fungi_killer_title": "Fungi Killer",
+  "fungi_killer_desc": "Fungi Killer protects crops from fungal infections, ensuring healthy plant growth."
+}
+
 }
 
 
